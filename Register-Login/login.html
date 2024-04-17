@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" id="email" placeholder="Correo electrónico">
+        <input type="password" id="Pass" placeholder="Contraseña">
+        <form action="#" method="post" id="captcha-form">
+            <div class="captcha-box" id="captcha-box"></div>
+            <input type="text" id="captcha-input" name="captcha-input" placeholder="Ingresa el CAPTCHA">
+            <button type="submit" onclick="login()">Enviar</button>
+        </form>
+        <p>¿No tienes una cuenta? <a href="index.html">Regístrate</a></p>
+        <p id="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
